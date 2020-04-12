@@ -1,0 +1,131 @@
+html {
+    font-size: 18px;
+  }
+
+body{
+      background-color: rgb(254, 250, 249);
+}
+
+h1{
+    background: linear-gradient(40deg,#F17B14, #CF7B98 ,#433061);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns:70% 10%;
+    text-align: justify;
+}
+
+.conteneur{
+        margin-left: 20%;
+}
+
+h2{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    margin-top:15%;
+}
+.entrée{
+    color:#F17B14;
+}
+
+.entrée>h2:before{
+    content:"";
+    display: block;
+    width: 300px;
+    height: 3px ; 
+    background: #F17B14  ;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.entrée>h2:after{
+    content:"";
+    display: block;
+    width: 300px;
+    height: 3px ;
+    background: #F17B14;
+    position: absolute;
+    right:0;
+    top: 50%;
+ }
+
+.plats{
+    color: rgb(207, 123, 152);
+}
+
+.plats>h2:before{
+    content:"";
+    display: block;
+    width:300px;
+    height: 3px ;
+    background: rgb(207, 123, 152);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.plats>h2:after{
+    content:"";
+    display: block;
+    width:300px;
+    height: 3px ;
+    background: rgb(207, 123, 152);
+    position: absolute;
+    right:0;
+    top: 50%;
+}
+
+.dessert{
+    color: rgb(67, 48, 97);
+}
+
+.dessert>h2:before{
+    content:"";
+    display: block;
+    width:300px;
+    height: 3px ;
+    background: rgb(67, 48, 97);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.dessert>h2:after{
+    content:"";
+    display: block;
+    width:300px;
+    height: 3px ;
+    background: rgb(67, 48, 97);
+    position: absolute;
+    right:0;
+    top: 50%;
+}
+
+@media all and (max-width: 900px){
+    body{
+        display: flex;
+        flex-direction: column;
+       margin: auto;       
+      }
+      .conteneur{
+          padding:1em;
+      }
+      h2{
+          text-align:center;
+          margin-top: 10%;
+      }
+      h2:before,h2:after{
+          width:auto;
+      }
+      .prix{
+          float: right;
+          vertical-align: bottom;
+      }
+
+}
