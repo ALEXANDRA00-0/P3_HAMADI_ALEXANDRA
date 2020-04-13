@@ -1,0 +1,104 @@
+html {
+    font-size: 18px;
+    color: rgb(77, 57, 45);
+}
+
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('../font/devonshire-regular-webfont.woff2') format('woff2'),
+         url('../font/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  body{
+    padding:5%;
+    background-color: rgb(245, 199, 181);
+    font-family: 'Kalam', cursive;
+}
+
+
+  h1{
+    margin-bottom: 10%;
+    margin-left: 20%;
+    color: rgb(77, 57, 45);
+    font-size: 3.5em;
+    font-family: devonshireregular;
+}
+
+   .wrapper{
+    display: grid;
+    grid-template-columns:60% 10%;
+    margin-left: 10%;
+
+}
+
+    .dessert{
+    margin-left: 10%;
+}
+  
+    h3{
+    text-align: center;
+    position: relative;
+    width: 900px;
+    margin-top: 10%;
+    font-family: 'Kalam', cursive;
+}
+
+    h3:before{
+    content:"";
+    display: block;
+    width: 300px;
+    height: 4px ; 
+    background-color: rgb(77, 57, 45);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+    
+    h3:after{
+    content:"";
+    display: block;
+    width: 300px;
+    height: 4px ;
+    background-color:rgb(77, 57, 45);
+    position: absolute;
+    right:0;
+    top: 50%;
+}
+
+    footer>p{
+    font-family: devonshireregular;
+    font-size: 2.5em;
+    margin-left: 30%;
+}
+
+    @media all and (max-width: 900px){
+        body{
+            margin: auto;   
+            font-size: 16px;    
+          }
+        h3{
+            text-align: center;
+            text-decoration: solid;
+            width: auto;
+
+        }
+        h3:after,h3:before{
+            content:"";
+            display: none; 
+        }
+        h1{
+              font-size: 28px;
+              margin-left: 20%;
+            }
+        .wrapper{
+            margin: auto;
+            width: auto;
+            grid-template-columns:auto;
+            display: grid;
+            grid-template-columns: 60% 10%;
+            margin-left: 20%;
+       }
+           
+    }

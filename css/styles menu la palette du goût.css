@@ -1,0 +1,86 @@
+html {
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Handlee', cursive;
+  }
+
+  body{
+      padding:5%;
+  }
+
+  h1{
+      margin-bottom: 10%;
+      margin-left:10%;
+      background: linear-gradient(80deg,rgb(108, 165, 2),#DAF79E);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+         text-decoration: solid;
+         font-family: 'Kaushan Script', cursive;
+        font-size: 5.5em;
+   }
+
+   .wrapper{
+      display: grid;
+      grid-template-columns:60% 10%;
+     margin-left: 10%;
+
+  }
+
+    h3{
+      text-align: center;
+      position: relative;
+      width: 900px;
+      margin-top: 10%;
+ }
+
+    h3:before{
+        content:"";
+        display: block;
+        width: 300px;
+        height: 3px ; 
+        background: linear-gradient(40deg,rgb(109, 165, 6),#DAF79E);
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    
+    h3:after{
+        content:"";
+        display: block;
+        width: 300px;
+        height: 3px ;
+        background:linear-gradient(40deg,#DAF79E,rgb(109, 165, 6));
+        position: absolute;
+        right:0;
+        top: 50%;
+     }
+
+     @media all and (max-width: 900px){
+        body{
+            margin: auto;   
+            font-size: 16px;    
+          }
+        h3{
+            text-align: center;
+            text-decoration: solid;
+            width: auto;
+
+        }
+        h3:after,h3:before{
+            content:"";
+            display: none; 
+        }
+        h1{
+              font-size: 28px;
+              margin-left: 20%;
+            }
+        .wrapper{
+            margin: auto;
+            width: auto;
+            grid-template-columns:auto;
+            display: grid;
+            grid-template-columns: 60% 10%;
+            margin-left: 20%;
+       }
+           
+    }
