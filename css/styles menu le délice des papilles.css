@@ -29,38 +29,18 @@ html {
    .wrapper{
       display: grid;
       grid-template-columns:60% 10%;
-     margin-left: 10%;
-
   }
 
-    h3{
-      text-align: center;
-      position: relative;
-      width: 900px;
-      margin-top: 10%;
+    
+ img{
+    float: left;
+    vertical-align:top; 
+   width: 20%;
+   height:50%;
+   background-color: rgb(245, 245, 245);
  }
 
-    h3:before{
-        content:"";
-        display: block;
-        width: 300px;
-        height: 3px ; 
-        background: linear-gradient(40deg,rgb(38, 82, 228),rgb(61,124,243));
-        position: absolute;
-        left: 0;
-        top: 50%;
-    }
-    
-    h3:after{
-        content:"";
-        display: block;
-        width: 300px;
-        height: 3px ;
-        background:linear-gradient(40deg,rgb(38, 82, 228),rgb(61,124,243));
-        position: absolute;
-        right:0;
-        top: 50%;
-     }
+  
 
      @media all and (max-width: 900px){
         body{

@@ -1,0 +1,51 @@
+html{
+    font-size: 18px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+body{
+    margin:0
+}
+
+header{
+  padding:5%;  
+  background-color: rgb(70, 140, 80);
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h1,h2{
+    text-align: center;
+    color:rgb(250, 210, 10);
+}
+
+.centre{
+    background-color: rgb(70, 140, 80);
+    margin-left: 35%;
+    margin-right: 35%; 
+}
+
+.conteneur{
+    padding:5%;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.Mentions{
+    margin-right: 55%;
+}
+
+img{
+    width:85%;
+    height: auto;
+    padding:10%;
+}
+
+footer{
+    background-color: rgb(70, 140, 80); 
+}
