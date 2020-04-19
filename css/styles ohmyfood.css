@@ -10,7 +10,7 @@ body{
 header{
   padding:5%;  
   background-color: rgb(70, 140, 80);
-}
+ }
 
 h1{
     font-size: 3em;
@@ -37,15 +37,24 @@ h1,h2{
 }
 
 .Mentions{
-    margin-right: 55%;
+    margin-right: 60%;
 }
 
-img{
+img {
     width:85%;
     height: auto;
     padding:10%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 330ms ease-in-out;
+} 
+  /*  
+.zoom img:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
 }
-
+*/
 footer{
     background-color: rgb(70, 140, 80); 
 }
