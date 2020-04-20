@@ -1,5 +1,5 @@
 html {
-    font-size: 18px;
+    font-size: 14px;
 }
 
     @font-face {
@@ -8,39 +8,67 @@ html {
              url('../font/typo_comics_light_italic_demo-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;    
-  }
+}
 
-  body{
-      padding:5%;
-      background-color: rgb(245, 245, 245);
-      font-family: typo_comics_light_italic_deRg;
-  }
+    body{
+        font-family: typo_comics_light_italic_deRg;
+}
 
-  h1{
-      margin-bottom: 10%;
-      text-align: center;
-      background: linear-gradient(80deg,rgb(38, 82, 228),rgb(61, 124, 243));
+    header{
+        padding:5%;  
+        background-color: rgb(70, 140, 80);
+        margin:0;
+}
+
+    h1{
+        text-align: center;
+        color:rgb(250, 210, 10);
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2.5em;
+}
+
+    h2{
+        text-align: center;
+        background: linear-gradient(80deg,rgb(38, 82, 228),rgb(61, 124, 243));
         -webkit-text-fill-color:transparent;
         -webkit-background-clip: text;
         font-size: 4.5em;
-        font-family: 'Dancing Script', cursive;
-   }
+        font-family: 'Dancing Script', cursive; 
+}
 
-   .wrapper{
-      display: grid;
-      grid-template-columns:60% 10%;
+    .conteneur{
+        margin:5%;
+        background-color: rgb(245, 245, 245);
+        font-family: typo_comics_light_italic_deRg;
+        padding:5%;
+}
+
+    h3{
+        text-align: center;
+}
+
+    .wrapper{
+        display: grid;
+        grid-template-columns:80% 10%;
+        margin-left: 15%;
   }
 
-    
- img{
-    float: left;
-    vertical-align:top; 
-   width: 20%;
-   height:50%;
-   background-color: rgb(245, 245, 245);
- }
+    .flex{
+        display: flex;
+}
+   
+    /*<MISE EN FORME FOOTER*/
+    footer{
+        background-color: rgb(70, 140, 80); 
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+}
 
-  
+    .Mentions{
+        margin-right: 45%;
+}
 
      @media all and (max-width: 900px){
         body{
@@ -57,7 +85,7 @@ html {
             content:"";
             display: none; 
         }
-        h1{
+        h2{
               font-size: 28px;
               margin-left: 20%;
             }

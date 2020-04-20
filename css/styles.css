@@ -1,40 +1,81 @@
 html {
-    font-size: 18px;
+    font-size: 14px;
   }
 
 body{
-      background-color: rgb(254, 250, 249);
-      font-family: 'Handlee', cursive;
+    font-family: 'Handlee', cursive;
+}
+
+header{
+    padding:5%;  
+    background-color: rgb(70, 140, 80);
+    margin:0;
 }
 
 h1{
-    background: linear-gradient(40deg,#F17B14, #CF7B98 ,#433061);
+    text-align: center;
+    color:rgb(250, 210, 10);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.5em;
+}
+
+h2{
+    background: linear-gradient(30deg,#F17B14, #CF7B98 ,#433061);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text;
     text-align: center;
+    margin-bottom: 10%;
+    font-size: 3.5em;
 }
 
 .wrapper{
     display: grid;
     grid-template-columns:70% 10%;
-    text-align: justify;
+    margin-left:5%;
 }
 
 .conteneur{
-        margin-left: 20%;
+    background-color: rgb(254, 250, 249);
+    margin:5%;
+    padding:5%
 }
 
-h2{
-    position: relative;
-    max-width: 900px;
+h3{
     text-align: center;
-    margin-top:15%;
 }
 
 .entrée{
     color:#F17B14;
 }
 
+.plats{
+    color: rgb(207, 123, 152);
+}
+
+.dessert{
+    color: rgb(67, 48, 97);
+}
+
+.dessert>p{
+    margin-left: 5%;
+}
+
+.flex{
+    display: flex;
+}
+
+footer{
+    background-color: rgb(70, 140, 80); 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.Mentions{
+    margin-right: 45%;
+}
+/*
 .entrée>h2:before{
     content:"";
     display: block;
@@ -56,10 +97,6 @@ h2{
     right:0;
     top: 50%;
  }
-
-.plats{
-    color: rgb(207, 123, 152);
-}
 
 .plats>h2:before{
     content:"";
@@ -83,9 +120,6 @@ h2{
     top: 50%;
 }
 
-.dessert{
-    color: rgb(67, 48, 97);
-}
 
 .dessert>h2:before{
     content:"";
@@ -108,7 +142,7 @@ h2{
     right:0;
     top: 50%;
 }
-
+*/
 @media all and (max-width: 900px){
     body{
         display: flex;
