@@ -45,7 +45,15 @@ html {
 
     h3{
         text-align: center;
-    }
+}
+
+/*
+a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+*/
+
 /*<MISE EN FORME FOOTER*/
     footer{
         background-color: rgb(70, 140, 80); 
@@ -60,6 +68,10 @@ html {
 }
     .Mentions{
         margin-right: 45%;
+  }
+  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
 }
 /*
     h3:before{

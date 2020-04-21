@@ -13,7 +13,7 @@ header{
  }
 
 h1{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -22,39 +22,53 @@ h1,h2{
     color:rgb(250, 210, 10);
 }
 
-.centre{
-    background-color: rgb(70, 140, 80);
-    margin-left: 35%;
-    margin-right: 35%; 
-}
-
 .conteneur{
     padding:5%;
+    margin-left: 10%;
 }
 
 .wrapper{
     display: flex;
 }
 
-.Mentions{
-    margin-right: 60%;
+img {
+    width:65%;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0px 0px 5px grey;   
+} 
+
+ img:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
 }
 
-img {
-    width:85%;
-    height: auto;
-    padding:10%;
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform 330ms ease-in-out;
-} 
-  /*  
-.zoom img:hover{
-    cursor: pointer;
-    transform: scale(1);
-    transition: transform 400ms;
+.wiggle{
+    margin-right: 50%;
 }
-*/
+
+.wiggle:hover,.wiggle2:hover{
+    animation: wiggle 50ms infinite;
+    animation-timing-function:linear;   
+    cursor: pointer;
+}
+
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+  }
+
+.centre{
+    background-color: rgb(70, 140, 80);
+    margin-left: 35%;
+    margin-right: 35%; 
+}
+
 footer{
     background-color: rgb(70, 140, 80); 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
