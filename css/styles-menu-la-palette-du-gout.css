@@ -69,10 +69,7 @@ a.middle:hover:before {
     .Mentions{
         margin-right: 45%;
   }
-  a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
+  
 /*
     h3:before{
         content:"";
