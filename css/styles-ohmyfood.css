@@ -8,7 +8,7 @@ body{
 }
 
 header{
-  padding:5%;  
+  padding:4%;  
   background-color: rgb(70, 140, 80);
  }
 
@@ -29,6 +29,8 @@ h1,h2{
 
 .wrapper{
     display: flex;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 img {
@@ -41,10 +43,7 @@ img {
 
  img:hover{
     transform: scale(1.1);
-}
-
-.wiggle{
-    margin-right: 50%;
+    opacity: 0.5;
 }
 
 .wiggle:hover,.wiggle2:hover{
