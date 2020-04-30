@@ -1,3 +1,4 @@
+/* mise en page générale*/
 html{
     font-size: 18px;
     font-family: 'Archivo Black', sans-serif;
@@ -7,20 +8,24 @@ body{
     margin:0
 }
 
+a{
+    text-decoration: none;
+    color:rgb(250, 210, 10);
+}
+
+/*mise en page header*/
 header{
   padding:4%;  
   background-color: rgb(70, 140, 80);
  }
 
-h1{
-    font-size: 2.5em;
+h1,h2{
     font-weight: bold;
+    color:rgb(250, 210, 10);
+    text-align: center;
 }
 
-h1,h2{
-    text-align: center;
-    color:rgb(250, 210, 10);
-}
+/* mise en page conteneur*/
 
 .conteneur{
     padding:5%;
@@ -28,9 +33,13 @@ h1,h2{
 }
 
 .wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.background{
+    overflow: hidden;
 }
 
 img {
@@ -46,6 +55,7 @@ img {
     opacity: 0.5;
 }
 
+/*mise en page footer et prochainement*/
 .wiggle:hover,.wiggle2:hover{
     animation: wiggle 50ms infinite;
     animation-timing-function:linear;   
@@ -62,6 +72,7 @@ img {
     background-color: rgb(70, 140, 80);
     margin-left: 35%;
     margin-right: 35%; 
+    margin-bottom: 160px;
 }
 
 footer{
@@ -70,4 +81,10 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
 }
