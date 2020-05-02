@@ -1,13 +1,13 @@
 html {
     font-size: 14px;
-    color: rgb(77, 57, 45);
+    color: #3D1319;
 }
 body{
     margin: 0;  
 }
 
 a{
-    color:rgb(250, 210, 10);
+    color:#FCCA46;
     text-decoration: none;
 }
 
@@ -22,53 +22,53 @@ a{
 /* Mise en page en tête*/
 header{
     padding:3%;  
-    background-color: rgb(70, 140, 80);
+    background-color: #579C87;
 }
 
 h2{
-    color:rgb(250, 210, 10);
+    color:#FCCA46;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
  }
 
 /*Mise en forme conteneur*/
 .conteneur{
-    background-color: rgb(245, 199, 181);
+    background-color: #FCDFDB;
     font-family: 'Kalam', cursive;
     margin:10%;
     width: 80%;
 }
 
-h3{
+h3,h1{
     text-align: center;
-    color: rgb(77, 57, 45);
-    font-size: 1,5em;
+    color: #3D1319;
+    font-size: 1.5em;
     font-family: 'Kalam', cursive;
 }
 
-.note{
+.note,.note2{
     text-align: center;
 }
 
 .menu{
     display: grid;
-    grid-template-columns: 80% 10%;
+    grid-template-columns: 70% 10%;
     justify-content: center;
 }
 
 .dessert{
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
-.flex{
+.flex1,.flex2{
     display: flex;
     justify-content: space-between;
 }
 
 /*<MISE EN FORME FOOTER*/
 footer{
-    background-color: rgb(70, 140, 80); 
+    background-color: #579C87; 
     position: fixed;
     left: 0;
     bottom: 0;
@@ -78,6 +78,7 @@ footer{
 .foot{
     padding:1%;
 }
+
 .foot:hover{
     animation: wiggle 50ms infinite;
     animation-timing-function:linear;   
@@ -94,7 +95,7 @@ footer{
     @media all and (max-width: 800px){
         body{
             margin: 0;   
-            font-size: 14px;    
+            font-size: 13px;    
         }
 
         img{
@@ -105,7 +106,7 @@ footer{
            font-size: 1.5em;
        }
 
-       .flex{
+       .flex1{
            justify-content: center;
        }
 }

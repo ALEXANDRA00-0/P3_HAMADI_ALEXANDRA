@@ -9,21 +9,24 @@ html {
 
 a{
     text-decoration: none;
-    color:rgb(250, 210, 10);
+    color:#FCCA46;
 }
 /* Mise en page en tête*/
 header{
     padding:3%;  
-    background-color: rgb(70, 140, 80);
+    background-color: #579C87;
 }
     
 h2{
-    color:rgb(250, 210, 10);
+    color:#FCCA46;
     font-family: 'Archivo Black', sans-serif;
     font-size: 2em;
     text-align: center;
 }
 /*Mise en forme conteneur*/
+.conteneur{
+    padding:4%;
+}
 
 .menu{
     display: grid;
@@ -32,7 +35,7 @@ h2{
     font-family: 'Kalam', cursive;
 }
 
-.flex{
+.flex,.flex1{
     display: flex;
     justify-content: space-between;
     vertical-align: text-top;
@@ -45,7 +48,7 @@ h1{
     -webkit-background-clip: text;
     text-decoration: solid;
     font-family: 'Kaushan Script', cursive;
-    font-size: 4.5em;
+    font-size: 3.5em;
 }
 
 h3{
@@ -54,7 +57,7 @@ h3{
    
 /*<MISE EN FORME FOOTER*/
 footer{
-    background-color: rgb(70, 140, 80); 
+    background-color: #579C87; 
     position: fixed;
     left: 0;
     bottom: 0;
@@ -64,7 +67,7 @@ footer{
 .foot{
     padding:1%;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 .foot:hover{
     animation: wiggle 50ms infinite;
@@ -80,15 +83,16 @@ footer{
 /*MISE EN FORME RESPONSIVE*/
 @media all and (max-width: 800px){
     body{
-        margin: 0;   
-        font-size: 14px;    
+        font-size: 13px;    
     }
 
     img{
         display: none;
     }
-   
-   h2{
+    .flex{
+        justify-content: center;
+    }
+    h2,h1{
        font-size: 1.5em;
    }
 

@@ -1,101 +1,108 @@
+/*mise en page body*/
 html {
     font-size: 14px;
 }
 
-    @font-face {
-        font-family: 'typo_comics_light_italic_deRg';
-        src: url('../font/typo_comics_light_italic_demo-webfont.woff2') format('woff2'),
-             url('../font/typo_comics_light_italic_demo-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;    
+@font-face {
+    font-family: 'typo_comics_light_italic_deRg';
+    src: url('../font/typo_comics_light_italic_demo-webfont.woff2') format('woff2'),
+        url('../font/typo_comics_light_italic_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;    
 }
 
-    body{
-        font-family: typo_comics_light_italic_deRg;
+body{
+    font-family: typo_comics_light_italic_deRg;
+    margin: 0;
 }
 
-    header{
-        padding:5%;  
-        background-color: rgb(70, 140, 80);
-        margin:0;
+a{
+    text-decoration: none;
+    color:#FCCA46;
+}
+/*mise en page header*/
+header{
+    padding:3.5%;  
+    background-color: #579C87;
 }
 
-    h1{
-        text-align: center;
-        color:rgb(250, 210, 10);
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 2.5em;
+h2{
+    text-align: center;
+    color:#FCCA46;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+}
+/*mise en page conteneur*/
+h1{
+    text-align: center;
+    background: linear-gradient(80deg,#0228DD,#0670F3,#229DF9);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    font-size: 3.5em;
+    font-family: 'Dancing Script', cursive; 
 }
 
-    h2{
-        text-align: center;
-        background: linear-gradient(80deg,rgb(38, 82, 228),rgb(61, 124, 243));
-        -webkit-text-fill-color:transparent;
-        -webkit-background-clip: text;
-        font-size: 4.5em;
-        font-family: 'Dancing Script', cursive; 
+.conteneur{
+    margin:8%;
+    background-color: #EDEFEF;
+    font-family: typo_comics_light_italic_deRg;
 }
 
-    .conteneur{
-        margin:5%;
-        background-color: rgb(245, 245, 245);
-        font-family: typo_comics_light_italic_deRg;
-        padding:5%;
+h3{
+    text-align: center;
 }
 
-    h3{
-        text-align: center;
+.menu{
+    display: grid;
+    grid-template-columns:65% 10%;
+    justify-content: center;
 }
 
-    .wrapper{
-        display: grid;
-        grid-template-columns:80% 10%;
-        margin-left: 15%;
-  }
-
-    .flex{
-        display: flex;
+.flex1,.flex2{
+    display: flex;
+    justify-content: space-between;
 }
    
-    /*<MISE EN FORME FOOTER*/
-    footer{
-        background-color: rgb(70, 140, 80); 
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
+/*<MISE EN FORME FOOTER*/
+footer{
+    background-color: #579C87; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} 
+
+.foot{
+    padding:1%;
 }
-
-    .Mentions{
-        margin-right: 45%;
+    
+.foot:hover{
+    animation: wiggle 50ms infinite;
+    animation-timing-function:linear;   
+    cursor: pointer;
 }
-
-     @media all and (max-width: 900px){
-        body{
-            margin: auto;   
-            font-size: 16px;    
-          }
-        h3{
-            text-align: center;
-            text-decoration: solid;
-            width: auto;
-
-        }
-        h3:after,h3:before{
-            content:"";
-            display: none; 
-        }
-        h2{
-              font-size: 28px;
-              margin-left: 20%;
-            }
-        .wrapper{
-            margin: auto;
-            width: auto;
-            grid-template-columns:auto;
-            display: grid;
-            grid-template-columns: 60% 10%;
-            margin-left: 20%;
-       }
-           
+    
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}
+    
+/*mise en forme responsive*/
+@media all and (max-width: 800px){
+    body{
+        font-size: 13px;    
     }
+
+    img{
+        display: none;
+    }
+       
+    h2,h1{
+        font-size: 1.5em;
+    }
+    .flex1{
+        justify-content: center;
+    }
+    
+}

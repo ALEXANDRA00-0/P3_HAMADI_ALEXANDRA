@@ -1,61 +1,77 @@
 /* mise en page générale*/
 html{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Archivo Black', sans-serif;
 }
-
 body{
     margin:0
 }
 
 a{
     text-decoration: none;
-    color:rgb(250, 210, 10);
+    color:#FCCA46;
 }
 
 /*mise en page header*/
 header{
-  padding:4%;  
-  background-color: rgb(70, 140, 80);
- }
+  padding:3.5%;  
+  background-color: #579C87;
+}
 
-h1,h2{
-    font-weight: bold;
-    color:rgb(250, 210, 10);
+h2{
     text-align: center;
+    color:#FCCA46;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
 }
 
 /* mise en page conteneur*/
 
 .conteneur{
     padding:5%;
-    margin-left: 10%;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: auto;
-}
-
-.background{
-    overflow: hidden;
+.carte{
+    display: flex;
+    align-items: stretch;;
 }
 
 img {
     width:65%;
     height: auto;
     margin: 5%;
-    box-shadow: 0px 0px 5px grey; 
-    transition: all ease 500ms;  
+    transition: all ease 500ms;
+    box-shadow: 0px 0px 5px grey;  
 } 
 
  img:hover{
     transform: scale(1.1);
     opacity: 0.5;
 }
+/*mise en forme next*/
+.next{
+    background-color: #579C87;
+    margin-left: 30%;
+    margin-right: 30%; 
+    margin-bottom: 160px;
+}
 
-/*mise en page footer et prochainement*/
+
+/*mise en page footer */
+footer{
+    background-color: #579C87; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
 .wiggle:hover,.wiggle2:hover{
     animation: wiggle 50ms infinite;
     animation-timing-function:linear;   
@@ -68,23 +84,23 @@ img {
     100% { transform: translate(2px, 0); }
   }
 
-.centre{
-    background-color: rgb(70, 140, 80);
-    margin-left: 35%;
-    margin-right: 35%; 
-    margin-bottom: 160px;
-}
 
-footer{
-    background-color: rgb(70, 140, 80); 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+/*mise en forme responsive*/
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
+@media all and (max-width: 800px){
+    
+    img{
+        display: none;
+    }
+    .carte{
+        flex-direction: column;
+    }
+   
+   h2,h1{
+       font-size: 1.5em;
+    }
+
+   .flex,.flex1,.flex2{
+       justify-content: center;
+   }
 }
