@@ -26,7 +26,7 @@ h1,h3{
 
 /* mise en page conteneur*/
 .conteneur{
-    padding: 10%;
+    padding:15%;
 }
 
 .flex{
@@ -36,12 +36,14 @@ h1,h3{
 }
 
 .menu{
-    width: 20%;
-    box-shadow: 0px 0px 5px grey;
+    box-shadow: 0px 2px 5px grey;
     overflow: hidden;
+    margin:5%;
 }
+
 img {
     transition: all ease 500ms;
+    width:350px;
 }
 
 img:hover{
@@ -53,17 +55,48 @@ img:hover{
 /*mise en forme next*/
 .Prochainement{
     background-color: #579C87;
-    margin-left: 30%;
-    margin-right: 30%; 
+    margin-left: 40%;
+    margin-right: 35%; 
     margin-bottom: 150px;
     display: flex;
+    justify-content: center;
 }
 .point{
    color:#FCCA46;
     float: right;
     display: flex;
+    margin-top: 7%;
 }
 
+.point1{
+    animation:bounce1 0.8s ease infinite;
+}
+
+@keyframes bounce1 {
+    0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.point2{
+    animation: bounce2 0.8s ease infinite;
+}
+
+@keyframes bounce2 {
+    0% { transform: translateY(-10px); }
+  50% { transform: translateY(0) }
+  100% { transform: translateY(-10px); }
+}
+
+.point3{
+    animation:bounce3 0.6s ease infinite;
+}
+
+@keyframes bounce3 {
+    0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
 
 
@@ -92,24 +125,23 @@ footer{
     0% { transform: translate(2px, 0); }
     50% { transform: translate(-2px, 0); }
     100% { transform: translate(2px, 0); }
-  }
+}
 
 
 /*mise en forme responsive*/
 
 @media all and (max-width: 700px){
 
-    body{
-        margin:0;
-    }
-    
     .menu{
         flex-direction: column;
+        justify-content: center;
     }
-
-   h1,h3{
-    font-size: 1.5em;
+    .conteneur{
+        padding:5%;
     }
-      
+    .Prochainement{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
    
 }

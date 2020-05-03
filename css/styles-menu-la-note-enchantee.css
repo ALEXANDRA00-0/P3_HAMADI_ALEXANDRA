@@ -31,7 +31,9 @@ h2{
     font-size: 2em;
     text-align: center;
  }
-
+h4{
+    text-align: center;
+}
 /*Mise en forme conteneur*/
 .conteneur{
     background-color: #FCDFDB;
@@ -45,6 +47,24 @@ h3,h1{
     color: #3D1319;
     font-size: 1.5em;
     font-family: 'Kalam', cursive;
+    position: relative;
+}
+
+h3:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+h3:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
 .note,.note2{
