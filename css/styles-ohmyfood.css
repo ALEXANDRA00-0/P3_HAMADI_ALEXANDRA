@@ -1,6 +1,6 @@
 /* mise en page générale*/
 html{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Archivo Black', sans-serif;
 }
 body{
@@ -14,47 +14,57 @@ a{
 
 /*mise en page header*/
 header{
-  padding:3.5%;  
+  padding:2.5%;  
   background-color: #579C87;
 }
 
-h2{
+h1,h3{
     text-align: center;
     color:#FCCA46;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2em;
 }
 
 /* mise en page conteneur*/
-
 .conteneur{
-    padding:5%;
+    padding: 10%;
 }
 
-.carte{
+.flex{
     display: flex;
-    align-items: stretch;;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 
 img {
-    width:65%;
-    height: auto;
-    margin: 5%;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+    margin:10%;
     transition: all ease 500ms;
-    box-shadow: 0px 0px 5px grey;  
-} 
+}
 
- img:hover{
+img:hover{
     transform: scale(1.1);
     opacity: 0.5;
 }
+
+
 /*mise en forme next*/
-.next{
+.Prochainement{
     background-color: #579C87;
     margin-left: 30%;
     margin-right: 30%; 
-    margin-bottom: 160px;
+    margin-bottom: 150px;
+    display: flex;
 }
+.point{
+   color:#FCCA46;
+    float: right;
+    display: flex;
+}
+
+
 
 
 /*mise en page footer */
@@ -66,7 +76,7 @@ footer{
     width: 100%;
 }
 
-.flex{
+.flex2{
     display: flex;
     justify-content: space-between;
     padding: 1%;
@@ -87,20 +97,15 @@ footer{
 
 /*mise en forme responsive*/
 
-@media all and (max-width: 800px){
-    
-    img{
-        display: none;
-    }
-    .carte{
-        flex-direction: column;
-    }
-   
-   h2,h1{
-       font-size: 1.5em;
-    }
+@media all and (min-width: 700px){
 
-   .flex,.flex1,.flex2{
-       justify-content: center;
-   }
+    body{
+        margin:0;
+    }
+    
+   h1,h3{
+    font-size: 1.5em;
+    }
+      
+   
 }
