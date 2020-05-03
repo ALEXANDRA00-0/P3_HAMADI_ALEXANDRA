@@ -36,9 +36,9 @@ h1,h3{
 }
 
 .menu{
-    
+    width: 20%;
     box-shadow: 0px 0px 5px grey;
-
+    overflow: hidden;
 }
 img {
     transition: all ease 500ms;
@@ -97,12 +97,16 @@ footer{
 
 /*mise en forme responsive*/
 
-@media all and (min-width: 700px){
+@media all and (max-width: 700px){
 
     body{
         margin:0;
     }
     
+    .menu{
+        flex-direction: column;
+    }
+
    h1,h3{
     font-size: 1.5em;
     }
