@@ -37,8 +37,9 @@ h1{
 
 .conteneur{
     background-color:#FFF5FE;
-    margin:5%;
-    padding:5%
+    margin:5% auto 160px;
+    
+    width:75%;
 }
 
 .entree,.plats{

@@ -43,7 +43,8 @@ h1,h3{
 
 img {
     transition: all ease 500ms;
-    width:350px;
+    width:300px;
+    display:block;
 }
 
 img:hover{
@@ -138,6 +139,9 @@ footer{
     }
     .conteneur{
         padding:5%;
+    }
+    image{
+        width:120px;
     }
     .Prochainement{
         margin-left: 20%;
